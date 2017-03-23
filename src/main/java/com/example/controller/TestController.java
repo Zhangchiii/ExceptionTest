@@ -20,4 +20,9 @@ public class TestController {
     public void test1() {
         testService.test1();
     }
+
+    @RequestMapping("test2")
+    public void test2(){
+        testService.test2();
+    }
 }

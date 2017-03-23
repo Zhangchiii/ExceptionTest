@@ -14,6 +14,11 @@ public class TestException extends RuntimeException {
         this.errorCode = errorCode;
     }
 
+    public TestException(ErrorCode errorCode, Throwable cause) {
+        super(errorCode.getMessage(), cause);
+        this.errorCode = errorCode;
+    }
+
     public ErrorCode getErrorCode() {
         return errorCode;
     }
